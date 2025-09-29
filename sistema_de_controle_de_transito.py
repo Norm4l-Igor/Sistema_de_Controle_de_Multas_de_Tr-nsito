@@ -1,0 +1,5 @@
+placa_do_veiculo = input("Digite a placa do veículo: ")
+nome_do_motorista = input("Digite o nome do motorista: ")
+velocidade_registrada = float(input("Digite a velocidade registrada (em km/h): "))
+velocidade_maxima_permitida = float(input("Digite a velocidade máxima permitida (em km/h): "))
+ja_foi_multado = input("O motorista já foi multado antes? (sim/não): ")
