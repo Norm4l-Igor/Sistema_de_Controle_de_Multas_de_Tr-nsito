@@ -24,6 +24,7 @@ elif velocidade_registrada <= velocidade_maxima_permitida * 1.5:
         desconto = input("Deseja pagar a multa agora (Sim/Não): ")
         if desconto == 'nao':
             print(f"Infração grave: Multa de R$ {infracao_grave * 2} e adição de 5 pontos na CNH.")
+            print(f"Atenção: Multa DOBRADA por reincidência!")
         elif desconto == 'sim':
             print(f"Você recebeu um desconto de 20%: R$ {infracao_grave * 0.8}")
         else:
@@ -37,4 +38,14 @@ else:
         print("Atenção: CNH suspensa! Compareça ao Detran.")
         print("Atenção: Você precisa fazer um curso de reciclagem no Detran.")
         if pagemento == 'Sim' or pagemento == 'sim':
-            print(f"Pagamento realizado! Você recebeu um desconto de 20%. Valor final: {infracao_gravissima * 2 * 0.8:.2f}")    
+            print(f"Pagamento realizado! Você recebeu um desconto de 20%. Valor final: {infracao_gravissima * 2 * 0.8:.2f}")
+    else:
+        if multado_anteriorment == 'nao' or multado_anteriorment == 'Nao' or multado_anteriorment == 'NAO':
+            print(f"Infração: Gravíssima - Multa de R$ {infracao_gravissima:.2f}, 7 pontos na CNH e suspensão da carteira.")
+            print(f"Atenção: Multa DOBRADA por reincidência!")
+            print("Atenção: CNH suspensa! Compareça ao Detran.")
+            print("Atenção: Você precisa fazer um curso de reciclagem no Detran.")
+        if pagemento == 'Sim' or pagemento == 'sim':
+                print(f"Pagamento realizado! Você recebeu um desconto de 20%. Valor final: {infracao_gravissima * 0.8:.2f}")
+
+
