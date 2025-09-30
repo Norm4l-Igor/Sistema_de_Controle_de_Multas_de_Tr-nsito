@@ -148,24 +148,4 @@ ou, para testar com um arquivo de entrada (`inputs.txt`) contendo as linhas de `
 python3 multas.py < inputs.txt
 ```
 
----
 
-## Autor
-
-Feito por você — um script simples e direto para entender a lógica de infrações e praticar condicionais em Python.
-
----
-
-## Licença
-
-MIT
-
----
-
-Se quiser, eu posso também:
-
-* Gerar uma versão mais técnica (com funções e validações).
-* Traduzir esse README para inglês ou espanhol.
-* Criar um arquivo `inputs.txt` de exemplo com as entradas do caso de teste.
-
-Quer que eu gere algum desses agora?
