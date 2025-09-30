@@ -22,7 +22,6 @@ elif velocidade_registrada <= velocidade_maxima_permitida * 1.5:
     if multado_anteriorment == 'sim':
         if pagemento == 'nao':
             print(f"Infração: Grave Multa de R$ {infracao_grave * 2} e adição de 5 pontos na CNH.")
-            print(f"Atenção: Multa DOBRADA por reincidência!")
         elif pagemento == 'sim':
             print(f"Você recebeu um desconto de 20%: R$ {infracao_grave * 0.8}")
         else:
