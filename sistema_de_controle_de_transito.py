@@ -1,5 +1,9 @@
-placa_do_veiculo = input("Digite a placa do veículo: ")
-nome_do_motorista = input("Digite o nome do motorista: ")
-velocidade_registrada = float(input("Digite a velocidade registrada (em km/h): "))
-velocidade_maxima_permitida = float(input("Digite a velocidade máxima permitida (em km/h): "))
-ja_foi_multado = input("O motorista já foi multado antes? (sim/não): ")
+placa_do_veiculo = input()
+nome_do_motorista = input()
+velocidade_registrada = int(input())
+velocidade_maxima_permitida = int(input())
+multado_anteriorment = input()
+pagemento = input()
+infracao_leve = 130.16
+infracao_grave = 195.23
+infracao_gravissima = 880.41
