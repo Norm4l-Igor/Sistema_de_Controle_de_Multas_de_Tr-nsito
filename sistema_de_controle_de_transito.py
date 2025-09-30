@@ -38,14 +38,11 @@ else:
         print("Atenção: CNH suspensa! Compareça ao Detran.")
         print("Atenção: Você precisa fazer um curso de reciclagem no Detran.")
         if pagemento == 'Sim' or pagemento == 'sim':
-            print(f"Pagamento realizado! Você recebeu um desconto de 20%. Valor final: {infracao_gravissima * 2 * 0.8:.2f}")
+            print(f"Pagamento realizado! Você recebeu um desconto de 20%. Valor final: R$ {infracao_gravissima * 2 * 0.8:.2f}")
     else:
-        if multado_anteriorment == 'nao' or multado_anteriorment == 'Nao' or multado_anteriorment == 'NAO':
-            print(f"Infração: Gravíssima - Multa de R$ {infracao_gravissima:.2f}, 7 pontos na CNH e suspensão da carteira.")
-            print(f"Atenção: Multa DOBRADA por reincidência!")
-            print("Atenção: CNH suspensa! Compareça ao Detran.")
-            print("Atenção: Você precisa fazer um curso de reciclagem no Detran.")
-        if pagemento == 'Sim' or pagemento == 'sim':
-                print(f"Pagamento realizado! Você recebeu um desconto de 20%. Valor final: {infracao_gravissima * 0.8:.2f}")
-
+        print(f"Infração: Gravíssima - Multa de R$ {infracao_gravissima:.2f}, 7 pontos na CNH e suspensão da carteira.")
+        print("Atenção: CNH suspensa! Compareça ao Detran.")
+        print("Atenção: Você precisa fazer um curso de reciclagem no Detran.")
+        if pagemento == 'sim' or pagemento == 'Sim' or pagemento == 'SIM':
+            print(f"Pagamento realizado! Você recebeu um desconto de 20%. Valor final: R$ {infracao_gravissima * 0.8:.2f}")
 
