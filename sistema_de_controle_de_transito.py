@@ -20,17 +20,16 @@ elif velocidade_registrada <= velocidade_maxima_permitida * 1.2:
     print(f"Infração: Leve - Multa de R$ {infracao_leve}, 0 pontos na CNH.")
 elif velocidade_registrada <= velocidade_maxima_permitida * 1.5:
     if multado_anteriorment == 'sim':
-        print("Multa DOBRADA por reincidência!")
-        desconto = input("Deseja pagar a multa agora (Sim/Não): ")
-        if desconto == 'nao':
-            print(f"Infração grave: Multa de R$ {infracao_grave * 2} e adição de 5 pontos na CNH.")
+        if pagemento == 'nao':
+            print(f"Infração: Grave Multa de R$ {infracao_grave * 2} e adição de 5 pontos na CNH.")
             print(f"Atenção: Multa DOBRADA por reincidência!")
-        elif desconto == 'sim':
+        elif pagemento == 'sim':
             print(f"Você recebeu um desconto de 20%: R$ {infracao_grave * 0.8}")
         else:
             print("Opção inválida para desconto.")
     else:
-        print(f"Infração grave: Multa de R$ {infracao_grave} e adição de 5 pontos na CNH.")
+        print(f"Infração: Grave - Multa de R$ {infracao_grave}, 5 pontos na CNH.")
+        print(f"Atenção: Multa DOBRADA por reincidência!")
 else:
     if multado_anteriorment == 'sim' or multado_anteriorment == 'Sim' or multado_anteriorment == 'SIM':     
         print(f"Infração: Gravíssima - Multa de R$ {infracao_gravissima:.2f}, 7 pontos na CNH e suspensão da carteira.")
