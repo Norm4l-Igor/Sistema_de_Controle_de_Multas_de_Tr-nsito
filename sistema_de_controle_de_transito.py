@@ -12,3 +12,22 @@ print("Placa:", placa_do_veiculo)
 print("Motorista:", nome_do_motorista)
 print("Velocidade registrada:", velocidade_registrada, "km/h")
 print("Velocidade máxima permitida:", velocidade_maxima_permitida, "km/h")
+
+
+if velocidade_registrada <= velocidade_maxima_permitida:
+    print("Infração: Nenhuma. Nenhuma penalidade aplicada.")
+elif velocidade_registrada <= velocidade_maxima_permitida * 1.2:
+    print(f"Infração: Leve - Multa de R$ {infracao_leve}, 0 pontos na CNH.")
+elif velocidade_registrada <= velocidade_maxima_permitida * 1.5:
+    if multado_anteriorment == 'sim':
+        print("Multa DOBRADA por reincidência!")
+        desconto = input("Deseja pagar a multa agora (Sim/Não): ")
+        if desconto == 'nao':
+            print(f"Infração grave: Multa de R$ {infracao_grave * 2} e adição de 5 pontos na CNH.")
+        elif desconto == 'sim':
+            print(f"Você recebeu um desconto de 20%: R$ {infracao_grave * 0.8}")
+        else:
+            print("Opção inválida para desconto.")
+    else:
+        print(f"Infração grave: Multa de R$ {infracao_grave} e adição de 5 pontos na CNH.")
+else:
