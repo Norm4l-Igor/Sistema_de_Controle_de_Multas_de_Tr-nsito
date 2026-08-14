@@ -40,6 +40,7 @@ else:
     else:
         print(f"Infração: Gravíssima - Multa de R$ {infracao_gravissima:.2f}, 7 pontos na CNH e suspensão da carteira.")
         print("Atenção: CNH suspensa! Compareça ao Detran.")
+        print("deu certo")
         print("Atenção: Você precisa fazer um curso de reciclagem no Detran.")
         if pagemento == 'sim' or pagemento == 'Sim' or pagemento == 'SIM':
             print(f"Pagamento realizado! Você recebeu um desconto de 20%. Valor final: R$ {infracao_gravissima * 0.8:.2f}")
